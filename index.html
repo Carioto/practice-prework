@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Dave Carioto">
+    <meta name="keywords" content="HTML, CSS, Git, Javascript, Practice">
+    <meta http-equiv="refresh" content="60">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Practice</title>
   </head>
@@ -12,21 +15,50 @@
       <h1>Prework Study Guide</h1>
     </header>
     <main>
-      <h2>Example of 3rd level header</h2>
-        <p>The words in this paragraph should wrap the webpage as in normal writing.</p>
-      <h2>A numbered list</h2>
+      <nav>
+        <p>Navigation:
+          <a href="#">Blog</a> |
+          <a href="#">Recipes</a> |
+          <a href="#">Outdoor Fun</a> |
+          <a href="#">Indoor Fun</a>
+        </p>
+      </nav>
+      <br>
+      <aside>
+        <h2>Other Sites</h2>
         <ul>
-          <li>The sky is blue</li>
-          <li>The table is black</li>
-          <li>The page is white</li>
+          <li><a href="#">Ebay</a></li>
+          <li><a href="#">Google</a></li>
+          <li><a href="#">Probably needs visualized in CSS</a></li>
         </ul>
+      </aside>
+      <section class="card" id="abbreviations">
+        <p>The <abbr title="world wide web">WWW</abbr> is an abreviation</p>
+      </section>
+      <section class="card" id="a list">
+      <h2>An un-numbered list</h2>
+        <ul>
+          <li>The sky is blue <ins>during the day.</ins></li>
+          <li><del>The concert is on Monday</del> Cancelled</li>
+          <li>use <kbd>Alt</kbd> + <kbd>B</kbd> to run your index file in your default browser</li>
+          <li>The radius <var>r</var> is equal to half the diameter <var>d</var></li>
+          <li> Here is the samp element <samp>Hello, World!</samp></li>
+          <li><bdo dir="rtl">Did I type this backword?</bdo></li>
+          <li>I said <q>No I don't think so</q></li>
+          <li>Did I write this <s>backward</s> forward?</li>
+          <li>I don't <u>belve</u> I spelled that right</li>
+          <li><sup>[1]</sup>Water is H<sub><small>2</small></sub>O</li>
+        </ul>
+      </section>
+      <section class="card" id="image">
       <h2>Add an image</h2>
-      <h2>Open console to see some Java</h2>
       <img
         src="./assets/Einstein.jpg"
         alt="Funny Einstein"
-      />
-      <br />
+      >
+      <figcaption>Einstein's crazy</figcaption>
+      </section>
+      <br>
       <a href="https://google.com">do a search here to find this image online</a> 
       <h3>Let's make some sections for notes of different subjects</h3>
         <section class="card" id="HTML"> 
@@ -47,11 +79,11 @@
         <section class="card" id="GIT">
           <h4>GIT</h4>
           <ul>
-            <li>Pull</li>
-            <li>Push</li>
+            <li><code>Pull</code> is used to update the local copy</li>
+            <li><code>Push</code> is used to update the repository</li>
             <li>status</li>
             <li>checkout -b</li>
-            <li>use code . in main branch of desired project to open vs code </li>
+            <li>use code . in main branch of desired project to open <mark>vs code</mark></li>
           </ul>
         
         </section>
@@ -59,10 +91,48 @@
           <h4>JavaScript</h4>
 
         </section>
+        <section class="card" id="spaces">
+          <h4>spaces</h4>
+          <p>there should be    4    spaces before and after the number</p>
+          <p>this is correct&nbsp;&nbsp;&nbsp;&nbsp;way to add 4 spaces</p>
+          <pre>However     This
+            is a form 
+                          of text control
+            using <code>&lt;pre&gt;</code>
+          </pre>
+        </section>
+        <section class="card" id="a quote">
+          <p>An excerpt from the <cite>Millennium</cite> Television series:</p>
+          <p>In number, there is one for every life which ever was, or ever will be. 
+            And like most lives, they wait for a moment, <em>the</em> moment, when it will be 
+            sent on its journey back toward the yellow sun.
+            Approaching the sun brings definitive change.
+            It will never again be the same.
+            Appearing in our skies, it is believed to be the prophecy of extraordinary events.
+            The birth of kings.
+            The death of empires.
+            After centuries, or millennia, the journey <strong>must</strong> end.
+            Perhaps smothered by its own dust, the dark, soulless body 
+            continues eternally through space and time.
+            It may disintegrate and crumble into inconsequential rubble.
+            Or it may be lost forever, crashing, burning, into the yellow sun.
+            And as I look into the sky and it looks back on me, I want to know, which am I? 
+            I <em>need</em> to know.<br> 
+            Is this the beginning of a journey –<br>
+            or the end?</p>
+        </section>
      </main>
-
     <footer>
-      <p>I can code!</p>
+      <address>This page was created by <br>
+      Dave Carioto<br>
+      927 McCoy Road<br>
+      McKees Rocks PA 15136<br>
+      <a href="www.nowebaddressyet.com">www.nowebaddressyet.com</a>
+    </address>
+      <a href="#">Legal</a> |
+      <a href="#">Notes</a> |
+      <a href="#">FAQ</a> |
+      <a href="#">About Me</a>
     </footer>
     <script src="./assets/script.js"></script>
   </body>

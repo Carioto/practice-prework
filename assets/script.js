@@ -16,6 +16,9 @@ for(var x = 0; x < shapes.length; x++) {
     console.log(shapes[x]);
 }
 var topics = ['HTML', 'CSS', 'Git', 'JavaScript'];
+function listTopics(){
 for (var y=0; y<topics.length; y++) {
     console.log(topics[y]);
 }
+}
+listTopics()
