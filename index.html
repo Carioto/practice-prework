@@ -9,10 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Practice</title>
+    <link rel="icon" href="assets/favicon.ico">
+
   </head>
   <body>
-    <header id="top">
-      <h1>Prework Study Guide</h1>
+    <header>
+      <h1 id="top">Prework Study Guide</h1>
     </header>
     <main>
       <nav>
@@ -33,9 +35,10 @@
         </ul>
       </aside>
       <section class="card" id="abbreviations">
+        <h2>Pointing at abbeviations</h2>
         <p>The <abbr title="world wide web">WWW</abbr> is an abreviation</p>
       </section>
-      <section class="card" id="a list">
+      <section class="card" id="lists">
       <h2>An un-numbered list</h2>
         <ul>
           <li>The sky is blue <ins>during the day.</ins></li>
@@ -58,13 +61,11 @@
       >
       <figcaption>Einstein's crazy</figcaption>
       </section>
-      <br>
-      <a href="https://google.com">do a search here to find this image online</a> 
-      <h3>Let's make some sections for notes of different subjects</h3>
         <section class="card" id="HTML"> 
           <h4>HTML</h4>
           <ul>
             <li>use class="selector" to assign properties to any element assigned to the class</li>
+            <li><a target='_blank' href="http://www.w3.org/">W3C</a> is the World Wide Web Consortium and will open in a new tab</li>
           </ul>
 
         </section>
@@ -102,6 +103,7 @@
           </pre>
         </section>
         <section class="card" id="a quote">
+          <h2 id="Excerpt"></h2>
           <p>An excerpt from the <cite>Millennium</cite> Television series:</p>
           <p>In number, there is one for every life which ever was, or ever will be. 
             And like most lives, they wait for a moment, <em>the</em> moment, when it will be 
@@ -118,7 +120,7 @@
             Or it may be lost forever, crashing, burning, into the yellow sun.
             And as I look into the sky and it looks back on me, I want to know, which am I? 
             I <em>need</em> to know.<br> 
-            Is this the beginning of a journey –<br>
+            Is this the beginning of the journey –<br>
             or the end?</p>
         </section>
         <section class="card" id="a table">
@@ -166,13 +168,75 @@
           <figcaption>Table 1:Sales in quantity</figcaption>
           </figure>
         </section>
+        <section class="card">
+          <h1>Some images</h1>
+          <p> <img src="assets/Coffee.jpg"
+            width="320" height="320">
+              <img src="assets/Fire.jpg"
+              width="320" height="320">
+          </p><br><br>
+          <p> This image has words before ..<br>
+            <img src="assets/bannana.jpg"
+             width="320" height="320"> <br>
+            .. and after it</p><br>
+          <a href="assets/smoke.jpg" target="_blank">
+            <img src="assets/smoke.jpg" alt="Red Smoke"
+            width="320" height="320"
+            title="Click to open this image in new tab">
+            <br><br>
+          </a>
+        </section>
+        <section>
+          <p> <a href="#top">Return to top</a></p>
+          <p> <a href="#Excerpt">Go to Excerpt</a></p>
+        </section>
+        <section class="card" id="link sensitive graphics">
+          <h4>Image maps</h4>
+          <p>Choose a color</p>
+          <p>
+            <img src="assets/4colors.jpg" alt="link sensitive graphic"
+            width="200" height="200"
+            usemap="#mood">
+          <map name="mood">
+            <area shape="rect" coords="0,0,100,100"
+            href="assets/red.png" alt="red" Title="red">
+            <area shape="rect" coords="100,0,200,100"
+            href="assets/blue.png" alt="blue" Title="blue">
+            <area shape="rect" coords="0,100,100,200"
+            href="assets/yellow.png" alt="yellow" Title="yellow">
+            <area shape="rect" coords="100,100,200,200"
+            href="assets/green.png" alt="green" Title="green">
+          </map>
+          </p>
+          <p>These coordinates were pretty hard to calculate.  And, of course,
+            the last paragrah of the section informs link sensitive graphics 
+            are not commonly used.
+          </p>
+        </section>
+        <section class="card" id="video file">
+          <p>A couple videos</p>
+          <video width="720" src="assets/WatchVid.mp4" controls autoplay>
+            Your browser does not support the video tag
+          </video>
+          <embed width="400" height="225"
+            src="https://www.youtube.com/embed/1gQfCPxo6Og?si=X9bZHAQNoY44vEm3">
+            <br><br>
+            <p>And a audio file from the <em>Destiny</em> soundtrack</p>
+            <audio controls>
+              <source src="assets/The Tower.mp3">
+            </audio>
+
+        </section>
      </main>
     <footer>
       <address>This page was created by <br>
       Dave Carioto<br>
       927 McCoy Road<br>
       McKees Rocks PA 15136<br>
-      <a href="www.nowebaddressyet.com">www.nowebaddressyet.com</a>
+      <a href="tel:+1.412.327.3662.200">412-327-3662 ext. 200</a> |
+      <a href="www.nowebaddressyet.com">www.nowebaddressyet.com</a><br>
+      <a href="mailto:diamondgus1@gmail.com">diamondgus1@gmail.com</a> |
+      <a href="skype:NoSkypeYet">Skype: NoSkypeYet</a>
     </address>
       <a href="#">Legal</a> |
       <a href="#">Notes</a> |
