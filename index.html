@@ -213,6 +213,7 @@
             are not commonly used.
           </p>
         </section>
+       <!-- 
         <section class="card" id="video file">
           <p>A couple videos</p>
           <video width="720" src="assets/WatchVid.mp4" controls autoplay>
@@ -225,8 +226,145 @@
             <audio controls>
               <source src="assets/The Tower.mp3">
             </audio>
-
         </section>
+      --> 
+        <section class="card" id="forms">
+          <h3>Some practice with forms</h3>
+          <form>
+            Enter your name:
+            <input type="text" name="aName" size="30" maxlength="40"><br>
+            Enter your password
+            <input type="password" name="pw" size="10" maxlength="10"><br>
+            Here is a text box below<br>
+            <textarea name="txt" rows="15" cols="50" maxlength="2500">
+              Enter some text here
+            </textarea><br>
+            <p>
+            Drop Box 1
+              <select name="topic1">
+                <option value="val1">First Option</option>
+                <option value="val2">Second Option</option>
+                <option value="val3">Third Option</option>
+                <option value="val4">Fourth Option</option>
+              </select><br><br>
+            </p>
+            <p>
+            Drop Box 2
+              <select multiple name="topic2" size="4">
+               <option value="val5">Fifth Option</option>
+               <option value="val6">Sixth Option</option>
+               <option value="val7">Seventh Option</option>
+               <option value="val8">Eigth Option</option>
+              </select>
+            </p><br>
+            <p>
+            Drop Box 3:<br>
+              <select multiple name="topic3" size="6">
+                <optgroup label="Group 1">
+                  <option value="val9">Nineth Option</option>
+                  <option value="val10">Tenth Option</option>
+                </optgroup>
+                <optgroup label="Group 2">
+                  <option value="val11">Eleventh Option</option>
+                  <option value="val12">Twelveth Option</option>
+                </optgroup>
+              </select><br><br>
+            </p>
+            <p>Select an educational level:</p>
+            <p>
+              <input type="radio" name="edu" id="r1" value="HiSchool">
+                <label for="r1">High School</label><br>
+              <input type="radio" name="edu" id="r2" value="Associate">
+                <label for="r2">2 Year</label><br>
+              <input type="radio" name="edu" id="r3" value="Bachelor">
+                <label for="r3">4 Year</label><br>
+              <input type="radio" name="edu" id="r4" value="None" checked>
+                <label for="r4">None of the above</label><br><br><br>
+            </p>
+            <p>Select the all fruits you like(everyone likes apples):</p>
+            <p>
+             <input type="checkbox" name="fruit" id="f1" value="Apple" checked disabled>
+                <label for="f1">Apples</label><br>
+             <input type="checkbox" name="fruit" id="f2" value="Orange">
+                <label for="f2">Oranges</label><br>
+             <input type="checkbox" name="fruit" id="f3" value="Cherry">
+                <label for="f3">Cherries</label><br>
+             <input type="checkbox" name="fruit`" id="f4" value="Grape">
+                <label for="f4">Grapes</label><br>
+             <input type="checkbox" name="fruit" id="f5" value="Kiwi">
+                <label for="f5">Kiwis</label><br>
+            </p><br>
+            <p>Please select your image only file for upload:
+              <input type="file" name="image" accept="image/*">
+              <input type="submit" value="Submit">
+              <input type="reset" value="Clear">
+              <button type="button">Example</button>
+            </p><br><br>
+            <p>Pick a Color:
+            <input type="color" name="pickcolor" value="#FF0000">
+            </p><br><br>
+            <p>Pick a Date:
+              <input type="date" name="pickdate"
+                   min="2023-01-01" max="2024-12-31">
+            </p><br><br>
+            <p>Pick a Time between 2am and 11pm(use scroll):
+              <input type="time" name="picktime"
+                  min="02:00" max="23:00"> 
+            </p><br><br>
+            <p>Enter a search term:
+              <input type="search" name="searchterm" autofocus>
+            </p><br><br>
+            <p>Please enter your valid email address:
+              <input type="email" name="emailadd" placeholder="JoeDoe@somewhere.com" required>
+            </p><br><br>
+            <p>Enter an even number between 2 and 200:
+              <input type="number" name="picknumber"
+                min="2" max="200" step="2">
+            </p><br><br>
+            <p>Select a number(this needs javascript to show an output):
+              <input type="range" name="targetnum" 
+                min="0" max="2000" step="5">
+            </p><br><br>
+            <p>What is your salutation:
+              <input list="onelist" name="title"><br>
+              <datalist id="onelist">
+                <option value="Mr.">
+                <option value="Mrs.">
+                <option value="Ms.">
+                <option value="Dr.">
+              </datalist>
+            </p>
+            <p>Please enter your zip code(only transmitted when correct format):
+              <input type="text" pattern="[0-9] {5}">
+            </p>
+            <p>Metered progress
+              <meter value="22" max="100">22 of 100</meter>22 of 100<br>
+              <meter value="95" min="0" low="25" optimum="50" high="75" max="100"></meter>95<br>
+            </p>
+          </form>
+        </section>
+        <section class="card" id="expanding">
+          I would think this is enough explantion
+          but if not ...
+          <details>
+            <summary>You can click here</summary>
+            <blockquote>for more information</blockquote>
+           </details>
+         <details open>
+          <summary>For links to more information</summary>
+           <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+           </ul>
+         </details>
+        </section>
+        <dialog id="dialog1" open>
+          <p>Exit this dialog popup?<br>
+          <input type="button" value="close"
+              onclick="document.getElementById('dialog1').close()">
+            </p>
+        </dialog>
      </main>
     <footer>
       <address>This page was created by <br>
