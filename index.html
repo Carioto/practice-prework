@@ -34,11 +34,27 @@
           <li><a href="#">Probably needs visualized in CSS</a></li>
         </ul>
       </aside>
+      <section class="card" id="inheritance">
+       <article>
+         <h2>Working with inheritance</h2>
+         <p>This is the first paragraph child of the article</p>
+         <ul>This list dependant of the paragraph?
+           <li>Item 1</li>
+           <li>Item 2</li>
+           <li>Item 3</li>
+         </ul>
+         <p>This is the second paragraph child of the article</p>
+      </article>
+      <p>This paragraph is not dependent of the article</p>
+      <p class="p_initial">This paragraph resets to all default settings</p><br>
+      <p class="p_adjust">This paragraph resets and has new elements</p>
+      <p>This paragraph returns to the class of the section</p>
+      </section>
       <section class="card" id="abbreviations">
         <h2>Pointing at abbeviations</h2>
         <p>The <abbr title="world wide web">WWW</abbr> is an abreviation</p>
       </section>
-      <section class="card" id="lists">
+      <section class="p_background" id="lists">
       <h2>An un-numbered list</h2>
         <ul>
           <li>The sky is blue <ins>during the day.</ins></li>
@@ -59,7 +75,7 @@
         src="./assets/Einstein.jpg"
         alt="Funny Einstein"
       >
-      <figcaption>Einstein's crazy</figcaption>
+      <figcaption>Einstein's Crazy</figcaption>
       </section>
         <section class="card" id="HTML"> 
           <h4>HTML</h4>
@@ -79,13 +95,13 @@
         </section>
         <section class="card" id="GIT">
           <h4>GIT</h4>
-          <ul>
+          <ol>
             <li><code>Pull</code> is used to update the local copy</li>
             <li><code>Push</code> is used to update the repository</li>
             <li>status</li>
             <li>checkout -b</li>
             <li>use code . in main branch of desired project to open <mark>vs code</mark></li>
-          </ul>
+          </ol>
         
         </section>
         <section class="card" id="JavaScript">
@@ -270,7 +286,7 @@
                 </optgroup>
               </select><br><br>
             </p>
-            <p>Select an educational level:</p>
+    <!--        <p>Select an educational level:</p>
             <p>
               <input type="radio" name="edu" id="r1" value="HiSchool">
                 <label for="r1">High School</label><br>
@@ -314,10 +330,10 @@
             <p>Enter a search term:
               <input type="search" name="searchterm" autofocus>
             </p><br><br>
-            <p>Please enter your valid email address:
+             <p>Please enter your valid email address:
               <input type="email" name="emailadd" placeholder="JoeDoe@somewhere.com" required>
-            </p><br><br>
-            <p>Enter an even number between 2 and 200:
+            </p><br><br> 
+          -->     <p>Enter an even number between 2 and 200:
               <input type="number" name="picknumber"
                 min="2" max="200" step="2">
             </p><br><br>
@@ -359,12 +375,12 @@
            </ul>
          </details>
         </section>
-        <dialog id="dialog1" open>
+      <!--   <dialog id="dialog1" open>
           <p>Exit this dialog popup?<br>
           <input type="button" value="close"
               onclick="document.getElementById('dialog1').close()">
             </p>
-        </dialog>
+        </dialog> -->
      </main>
     <footer>
       <address>This page was created by <br>
