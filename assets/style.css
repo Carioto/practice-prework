@@ -86,3 +86,19 @@ figcaption {
     font-size: 24px;
 
 }
+.article1a {margin: 30px 20px;  width:840px;background: 
+    antiquewhite;color: black;
+    border: 20px solid; border-color: red green;}
+.article1b {width: 70%;background: antiquewhite;color: black; 
+    border: 20px groove peru; padding: 25px;
+    background-image: url(HotAirB.jpg);
+    background-attachment: fixed;}
+.article1c {box-sizing: border-box;
+    width: 70%; padding: 25px; border: 20px dashed black;
+    background-color: antiquewhite;color: black;}
+.article1d {border: 25px solid transparent;
+            border-image: url(myborder.png) 50 50 50 50 round;
+            background-color: lightblue;
+}
+
+           
