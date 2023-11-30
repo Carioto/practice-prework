@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
 }
-
+html { font-size: calc(100% + 0.5vw);}
+p::first-letter{font-size: xx-large;}
 header,
 footer {
     width:100%;
@@ -10,7 +11,7 @@ footer {
     background-color: rgb(121, 9, 121);
     color: greenyellow;
 }
-#top {border: 3px dotted greenyellow}
+#top {border: 1px solid orange}
 h1,
 h2,
 h3,
@@ -19,19 +20,79 @@ h4 {
     color: red;
     font-family: "Arial";
 }
+.table-fixed {
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed; width: 700px;
+    border-collapse: collapse;
+    text-align: center;
+}
+caption {color: wheat;}
 body {
-    font-family: Arial, Verdana;
+    font-family: Verdana;
     color: white;
     background: gray;
 
 }
-p::first-letter{font-size: xxx-large;}
+th {
+border: 3px solid black;
+}
+tr:nth-child(even) {background: lightgray;
+}
+tr:hover {
+    background: darkblue;
+    color: white;
+
+}
+td {
+    border: 1px solid black;
+}
+.column {
+    column-count: 3;
+    column-gap: 1.75rem;
+    text-align: justify;
+    margin: 5px;
+    padding: 15px;
+}
+.large {
+    width: 325px;
+    height: 267px;
+}
+.element img:hover {transform: scale(1.25) rotate(-25deg);
+            transition: all 1s ease;}
+.med {
+    width: 225px;
+    height: 184px;
+}
+.sm {
+    width: 125px;
+    height: 103px;
+}
+/* label {
+    min-width: 8em;
+    display: inline-block;
+    text-align: left;
+} */
 img {
-    display:block;
-    height:100px;
-    width:120px;
+    display:block; 
+    height:300px;
+    width:360px;
     margin-left:auto;
     margin-right:auto;
+    transition: all 1s ease;
+}
+figure {
+    position: relative;
+
+}
+.up1 {
+    
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 14px;
+    background-color: orange;
+    padding: 10px;
 }
 article {
     background: lightblue;
@@ -47,17 +108,19 @@ article {
 }
 .p_background {
     padding: 20px 300px 20px 300px;
-    background-image: url('HABSlice.jpg');
+    background-image: url('Fire.jpg');
     background-repeat: no-repeat;
     transform: rotate(1deg);
     
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(230, 225, 225, 0.75);
 }
-ul,
-ol {
+ol,
+ul  {
     padding-left:40px;
     font-size:20px;
     text-align: center;
+    list-style-position: inside;
+    list-style-type: square;
 }
 p {
     text-align:center;
@@ -69,8 +132,62 @@ p {
     border:5px solid orange;
     box-shadow:5px 10px #547854;
 }
-h4 {
-    text-align: center;
+.card2 {
+    width:80%;
+    margin:40px auto;
+    border:5px solid orange;
+    box-shadow:5px 10px #547854;
+    background: linear-gradient(grey 50%, orange 50%);
+    background-size: 50px 100px;
+}
+.card3 {
+    width:80%;
+    margin:40px auto;
+    border:5px solid orange;
+    box-shadow:5px 10px #547854;
+    background: linear-gradient(to right, grey, orange);
+}
+.card4 {
+    width:80%;
+    margin:40px auto;
+    border:5px solid orange;
+    box-shadow:5px 10px #547854;
+    background: repeating-linear-gradient(40deg, grey,white 25px,  orange 25px, orange 50px);
+}
+.card5 {
+ /* position: absolute;
+    top: 20px;
+    left: 100px; */
+    width:80%;
+    margin:40px auto;
+    border:5px solid orange;
+    box-shadow:5px 10px #547854;
+    background: radial-gradient(grey, orange);
+    border-radius: 30px;
+}
+.card6 {
+    width:80%;
+    margin:40px auto;
+    border:5px solid orange;
+    box-shadow:5px 10px #547854;
+    background: linear-gradient(purple, blue, green, yellow, red, purple);
+}
+.card7 {
+    width:80%;
+    margin:40px auto;
+    border:5px solid orange;
+    box-shadow:8px 8px 8px red;
+    background: repeating-radial-gradient(circle, grey, grey 10px, orange 10px, orange 20px);
+}
+.card8 {
+    width:80%;
+    margin:40px auto;
+    border:5px solid orange;
+    box-shadow:8px 8px 8px red;
+    background: repeating-radial-gradient(circle, grey, grey 10px, orange 10px, orange 20px);
+    border-radius: 10%/50%;
+}
+h4 {text-align: center;
     text-decoration-line: double;
     color: aqua;
     font-size: 200%;
@@ -85,6 +202,14 @@ figcaption {
     font-family: Lucida;
     font-size: 24px;
 
+}
+.flexmain { width: 90;height: 500px; padding: 10px; border: 1px black; background-color: bisque; 
+            display: flex; flex-direction: column; justify-content: space-around;}
+.flexarticle { width: 300px; padding: 10px;margin: 0px 5px 5px 0px; border: 2px solid red;background-color: sienna; }
+table {
+    
+    color: blue;
+    background-color: bisque;
 }
 .article1a {margin: 30px 20px;  width:840px;background: 
     antiquewhite;color: black;
@@ -101,4 +226,11 @@ figcaption {
             background-color: lightblue;
 }
 
+.sticky_h1 {
+    position: sticky;
+    top:-1px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
            

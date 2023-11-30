@@ -27,7 +27,7 @@
       </nav>
       <br>
       <aside>
-        <h2>Other Sites</h2>
+        <h4>Other Sites</h4>
         <ul>
           <li><a href="#">Ebay</a></li>
           <li><a href="#">Google</a></li>
@@ -35,10 +35,11 @@
         </ul>
       </aside>
       <section class="card" id="inheritance">
-       <article>
-         <h2>Working with inheritance</h2>
+      <h2>Working with inheritance</h2>
+      <article>
+        <h3>Several examples</h3>
          <p>This is the first paragraph child of the article</p>
-         <ul>This list dependant of the paragraph?
+         <ul>
            <li>Item 1</li>
            <li>Item 2</li>
            <li>Item 3</li>
@@ -69,13 +70,12 @@
           <li><sup>[1]</sup>Water is H<sub><small>2</small></sub>O</li>
         </ul>
       </section>
-      <section class="card" id="image">
+      <section class="element card"  id="image">
       <h2>Add an image</h2>
-      <img
-        src="./assets/Einstein.jpg"
+      <img  src="./assets/Einstein.jpg"
         alt="Funny Einstein"
       >
-      <figcaption>Einstein's Crazy</figcaption>
+      <p>Einstein's Crazy</p>
       </section>
         <section class="card" id="HTML"> 
           <h4>HTML</h4>
@@ -108,7 +108,7 @@
           <h4>JavaScript</h4>
 
         </section>
-        <section class="card" id="spaces">
+        <section class="card7" id="spaces">
           <h4>spaces</h4>
           <p>there should be    4    spaces before and after the number</p>
           <p>this is correct&nbsp;&nbsp;&nbsp;&nbsp;way to add 4 spaces</p>
@@ -118,8 +118,8 @@
             using <code>&lt;pre&gt;</code>
           </pre>
         </section>
-        <section class="card" id="a quote">
-          <h2 id="Excerpt"></h2>
+        <section class="card5" id="a-quote">
+          <h2 id="Excerpt">Practice with words</h2>
           <p>An excerpt from the <cite>Millennium</cite> Television series:</p>
           <p>In number, there is one for every life which ever was, or ever will be. 
             And like most lives, they wait for a moment, <em>the</em> moment, when it will be 
@@ -139,20 +139,18 @@
             Is this the beginning of the journey –<br>
             or the end?</p>
         </section>
-        <section class="card" id="a table">
+        <section class="card6" id="a_table">
           <h2>A Table</h2>
           <figure>
-          <table>
-            <caption>Sales of Produce in 2017
-              <details>A list of produce items sold in the year 2017</details>
-            </caption>
-            <thead>
+          <table class="table-fixed">
+            <caption>Produce sales in 2017</caption>
+          <thead>
             <tr>
               <th>Category</th>
               <th>Type</th>
               <th>Sales</th>
             </tr>
-            </thead>
+          </thead>
             <tbody>
             <tr>
               <td>Fruit</td>
@@ -176,24 +174,29 @@
             </tr>
             </tbody>
             <tfoot>
-              <td>Total</td>
-              <td></td>
-              <td>78000</td>
+              <th>Total</th>
+              <th></th>
+              <th>78000</th>
             </tfoot>
           </table>
           <figcaption>Table 1:Sales in quantity</figcaption>
           </figure>
         </section>
-        <section class="card">
-          <h1>Some images</h1>
-          <p> <img src="assets/Coffee.jpg"
-            width="320" height="320">
+        <section class="card4">
+          <h2>Some images</h2>
+          <p> <img src="assets/Fire.jpg"
+           class="large"
+            alt="a camp fire">
               <img src="assets/Fire.jpg"
-              width="320" height="320">
+             class="med"
+              alt="a camp fire">
+              <img src="assets/Fire.jpg"
+             class="sm"
+              alt="a camp fire">
           </p><br><br>
           <p> This image has words before ..<br>
             <img src="assets/bannana.jpg"
-             width="320" height="320"> <br>
+             width="320" height="320" alt="bannana"> <br>
             .. and after it</p><br>
           <a href="assets/smoke.jpg" target="_blank">
             <img src="assets/smoke.jpg" alt="Red Smoke"
@@ -202,15 +205,16 @@
             <br><br>
           </a>
         </section>
-        <section>
+        <section class="card8">
+          <h2>Some links</h2>
           <p> <a href="#top">Return to top</a></p>
           <p> <a href="#Excerpt">Go to Excerpt</a></p>
         </section>
-        <section class="card" id="link sensitive graphics">
+        <section class="card3" id="link_sensitive_graphics">
           <h4>Image maps</h4>
           <p>Choose a color</p>
           <p>
-            <img src="assets/4colors.jpg" alt="link sensitive graphic"
+            <img src="assets/4colors.jpg" alt="link_sensitive_graphic"
             width="200" height="200"
             usemap="#mood">
           <map name="mood">
@@ -244,7 +248,7 @@
             </audio>
         </section>
       --> 
-        <section class="card" id="forms">
+        <section class="card2" id="forms">
           <h3>Some practice with forms</h3>
           <form>
             Enter your name:
@@ -286,7 +290,7 @@
                 </optgroup>
               </select><br><br>
             </p>
-    <!--        <p>Select an educational level:</p>
+          <p>Select an educational level:</p>
             <p>
               <input type="radio" name="edu" id="r1" value="HiSchool">
                 <label for="r1">High School</label><br>
@@ -327,13 +331,13 @@
               <input type="time" name="picktime"
                   min="02:00" max="23:00"> 
             </p><br><br>
-            <p>Enter a search term:
+       <!-- <p>Enter a search term:
               <input type="search" name="searchterm" autofocus>
             </p><br><br>
-             <p>Please enter your valid email address:
+            <p>Please enter your valid email address:
               <input type="email" name="emailadd" placeholder="JoeDoe@somewhere.com" required>
-            </p><br><br> 
-          -->     <p>Enter an even number between 2 and 200:
+            </p><br><br> --> 
+               <p>Enter an even number between 2 and 200:
               <input type="number" name="picknumber"
                 min="2" max="200" step="2">
             </p><br><br>
@@ -360,6 +364,7 @@
           </form>
         </section>
         <section class="card" id="expanding">
+          <h2>Expanding</h2>
           I would think this is enough explantion
           but if not ...
           <details>
@@ -416,6 +421,103 @@
             There are camels in the deserts in China that people use for transportation.
             Lots of different kinds of animals make their home in China.
           </p>
+        </section>
+        <section>
+          <figure>
+            <img src="./assets/ColoredPencils.jpg"
+             alt="Colored Pencils">
+             <figcaption>Colored Pencils</figcaption>
+          </figure>
+          <p class="up1"> <a href="#top">Top</a></p>
+
+        </section>
+        <section class="card" id="sticky position">
+          <article>
+          <h2 class="sticky_h1">Article One</h2>
+          <p>A good example of a paragraph contains a topic sentence, details and a conclusion. 
+            There are many different kinds of animals that live in China. 
+            Tigers and leopards are animals that live in China's forests in the north. 
+            In the jungles, monkeys swing in the trees and elephants walk through the brush. 
+            There are camels in the deserts in China that people use for transportation.
+            Lots of different kinds of animals make their home in China.A good example of a paragraph contains a topic sentence, details and a conclusion. 
+            There are many different kinds of animals that live in China. 
+            Tigers and leopards are animals that live in China's forests in the north. 
+            In the jungles, monkeys swing in the trees and elephants walk through the brush. 
+            There are camels in the deserts in China that people use for transportation.
+            Lots of different kinds of animals make their home in China.A good example of a paragraph contains a topic sentence, details and a conclusion. 
+            There are many different kinds of animals that live in China. 
+            Tigers and leopards are animals that live in China's forests in the north. 
+            In the jungles, monkeys swing in the trees and elephants walk through the brush. 
+            There are camels in the deserts in China that people use for transportation.
+            Lots of different kinds of animals make their home in ChinaA good example of a paragraph contains a topic sentence, details and a conclusion. 
+            There are many different kinds of animals that live in China. 
+            Tigers and leopards are animals that live in China's forests in the north. 
+            In the jungles, monkeys swing in the trees and elephants walk through the brush. 
+            There are camels in the deserts in China that people use for transportation.
+            Lots of different kinds of animals make their home in China..A good example of a paragraph contains a topic sentence, details and a conclusion. 
+            There are many different kinds of animals that live in China. 
+            Tigers and leopards are animals that live in China's forests in the north. 
+            In the jungles, monkeys swing in the trees and elephants walk through the brush. 
+            There are camels in the deserts in China that people use for transportation.
+            Lots of different kinds of animals make their home in China.A good example of a paragraph contains a topic sentence, details and a conclusion. 
+            There are many different kinds of animals that live in China. 
+            Tigers and leopards are animals that live in China's forests in the north. 
+            In the jungles, monkeys swing in the trees and elephants walk through the brush. 
+            There are camels in the deserts in China that people use for transportation.
+            Lots of different kinds of animals make their home in China.</p>
+          </article>
+          <article>
+            <h2 class="sticky_h1">Article Two</h2>
+            <p class="column">A good example of a paragraph contains a topic sentence, details and a conclusion. 
+              There are many different kinds of animals that live in China. 
+              Tigers and leopards are animals that live in China's forests in the north. 
+              In the jungles, monkeys swing in the trees and elephants walk through the brush. 
+              There are camels in the deserts in China that people use for transportation.
+              Lots of different kinds of animals make their home in China.A good example of a paragraph contains a topic sentence, details and a conclusion. 
+              There are many different kinds of animals that live in China. 
+              Tigers and leopards are animals that live in China's forests in the north. 
+              In the jungles, monkeys swing in the trees and elephants walk through the brush. 
+              There are camels in the deserts in China that people use for transportation.
+              Lots of different kinds of animals make their home in China.A good example of a paragraph contains a topic sentence, details and a conclusion. 
+              There are many different kinds of animals that live in China. 
+              Tigers and leopards are animals that live in China's forests in the north. 
+              In the jungles, monkeys swing in the trees and elephants walk through the brush. 
+              There are camels in the deserts in China that people use for transportation.
+              Lots of different kinds of animals make their home in ChinaA good example of a paragraph contains a topic sentence, details and a conclusion. 
+              There are many different kinds of animals that live in China. 
+              Tigers and leopards are animals that live in China's forests in the north. 
+              In the jungles, monkeys swing in the trees and elephants walk through the brush. 
+              There are camels in the deserts in China that people use for transportation.
+              Lots of different kinds of animals make their home in China..A good example of a paragraph contains a topic sentence, details and a conclusion. 
+              There are many different kinds of animals that live in China. 
+              Tigers and leopards are animals that live in China's forests in the north. 
+              In the jungles, monkeys swing in the trees and elephants walk through the brush. 
+              There are camels in the deserts in China that people use for transportation.
+              Lots of different kinds of animals make their home in China.A good example of a paragraph contains a topic sentence, details and a conclusion. 
+              There are many different kinds of animals that live in China. 
+              Tigers and leopards are animals that live in China's forests in the north. 
+              In the jungles, monkeys swing in the trees and elephants walk through the brush. 
+              There are camels in the deserts in China that people use for transportation.
+              Lots of different kinds of animals make their home in China
+            </p>
+          </article>
+        </section>
+        <section class="flexmain" id="flexible_boxes">
+            <article class="flexarticle">
+              <h4>Article 1</h4>
+              <p>This Article is the first in a series</p>
+            </article>
+            <article class="flexarticle">
+              <h4>Article 2</h4>
+              <p>This Article is the second in a series</p>
+            </article>
+            <article class="flexarticle">
+              <h4>Article 3</h4>
+              <p>This Article is the third in a series</p>
+            </article>
+        </section>
+        <section>
+
         </section>
      </main>
     <footer>
